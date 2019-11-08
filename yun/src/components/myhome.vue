@@ -18,11 +18,11 @@
             </div>
         </div>
         <div class="tools">
-            <p>常用工具</p>
-            <ul>
-                <li>
+            <p class="top-list">常用工具</p>
+            <ul class="home-list">
+                <li class="first">
                     <div>
-                        <i class="iconfont icon-kefufuwu"></i>
+                        <i class="iconfont icon-kehufuwu"></i>
                     </div>
                     <p>客户服务</p>
                 </li>
@@ -38,22 +38,22 @@
                     </div>
                     <p>意见反馈</p>
                 </li>
-                <li>
+                <li class="last">
                     <div>
                         <i class="iconfont icon-shujutongji"></i>
                     </div>
                     <p>数据统计</p>
                 </li>
             </ul>
-            <p>我的服务</p>
-            <ul>
-                <li>
+            <p class="top-list">我的服务</p>
+            <ul class="home-list">
+                <li class="first">
                     <div>
                         <i class="iconfont icon-juliceliang"></i>
                     </div>
                     <p>里程计算</p>
                 </li>
-                <li>
+                <li class="last">
                     <div>
                         <i class="iconfont icon-wj-flyz"></i>
                     </div>
@@ -115,7 +115,7 @@ export default {
             margin-left: 8px;
         }
         .fc{
-            color: #f87b33;
+            color: #ff4500;
             letter-spacing: 3px;
         }
     }
@@ -125,11 +125,39 @@ export default {
     margin-left: 25px;
     font-size: 28px;
     letter-spacing: 4px;
-    color: #f87b33;
+    color: #ff4500;
 }
 .tools{
     margin-top: 20px;
     background-color: white;
     padding: 20px;
+    .home-list{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 30px 0;
+        li{
+            text-align: center;
+            i{
+                font-size: 45px;
+                color: #ff4500;
+            }
+            p{
+                margin: 15px 0;
+                font-size: 26px;
+            }
+        }
+        .first{
+            margin-left: 20px;
+        }
+        .last{
+            margin-right: 20px;
+        }
+    }
+    .top-list{
+        margin: 30px 0;
+        font-size: 32px;
+    }
 }
 </style>

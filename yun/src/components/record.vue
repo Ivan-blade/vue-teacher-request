@@ -9,6 +9,10 @@
                 </ul>
             </div>
         </v-header>
+        <div class="record-content">
+            <i class="iconfont icon-zanwuxiaoxi-"></i>
+            <p>无更多消息</p>
+        </div>
     </div>
 </template>
 
@@ -34,6 +38,25 @@ export default {
     }
     .re-pad{
         padding-right: 45px;
+    }
+}
+.record-content{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    i{
+        font-size: 200px;
+        color: #c0c0c0;
+    }
+    p{
+        margin-top: 30px;
+        color: grey;
+        font-size: 25px;
+        letter-spacing: 3px;
     }
 }
 </style>

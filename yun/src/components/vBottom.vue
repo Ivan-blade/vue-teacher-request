@@ -1,10 +1,22 @@
 <template>
-    <div class="bot">
-        <i class="iconfont icon-fahuo fs ml" @click="goToItem"></i>
-        <i class="iconfont icon-tonghuajilu fs" @click="goToRecord"></i>
-        <i class="iconfont icon-dingdan fs" @click="goToOrder"></i>
-        <i class="iconfont icon-wode1 fs mr" @click="goToHome"></i>
-    </div>
+  <ul class="bot">
+    <li class="ml">
+      <div><i class="iconfont icon-fahuo" @click="goToItem"></i></div>
+      <p>发货</p>
+    </li>
+    <li>
+      <div><i class="iconfont icon-tonghuajilu" @click="goToRecord"></i></div>
+      <p>通话记录</p>
+    </li>
+    <li>
+      <div><i class="iconfont icon-dingdan" @click="goToOrder"></i></div>
+      <p>订单</p>
+    </li>
+    <li class="mr">
+      <div><i class="iconfont icon-wode1" @click="goToHome"></i></div>
+      <p>我的</p>
+    </li>
+  </ul>
 </template>
 
 <script>
@@ -41,24 +53,23 @@ export default {
     position: fixed;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
     color: #cdc5bf;
-    margin: 5px 2px;
     padding: 15px 0;
     background-color: white;
     border-top: 1px solid #b5b5b5;
     bottom: 0;
     left: 0;
     right: 0;
-    .fs{
-        font-size: 55px;
+    li{
+      text-align: center;
     }
-    .ml{
-        margin-left: 30px;
+    i{
+      font-size: 50px;
     }
-    .mr{
-        margin-right: 30px;
+    p{
+      margin-top: 2px;
+      font-size: 10px;
     }
 }
 </style>

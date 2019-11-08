@@ -48,11 +48,25 @@
       "unicode_decimal": 58934
     },
     {
+      "icon_id": "1272654",
+      "name": "盒子",
+      "font_class": "box",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
       "icon_id": "1964731",
       "name": "客户服务",
       "font_class": "kehufuwu",
       "unicode": "e61e",
       "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "2551777",
+      "name": "聊天",
+      "font_class": "liaotian",
+      "unicode": "e610",
+      "unicode_decimal": 58896
     },
     {
       "icon_id": "3392308",
