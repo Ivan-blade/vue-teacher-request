@@ -63,6 +63,10 @@ export default {
     right: 0;
     li{
       text-align: center;
+      &:hover{
+        color: #ff4500;
+        transition: all .5s;
+      }
     }
     i{
       font-size: 50px;

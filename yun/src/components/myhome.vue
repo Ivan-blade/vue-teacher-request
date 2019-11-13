@@ -128,35 +128,38 @@ export default {
     color: #ff4500;
 }
 .tools{
-    margin-top: 20px;
+    margin-top: 40px;
     background-color: white;
-    padding: 20px;
+    padding-top: 30px;
     .home-list{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        margin: 30px 0;
+        padding-bottom: 30px;
         li{
             text-align: center;
+            div{
+                margin-top: 25px;
+                margin-bottom: 20px;
+            }
             i{
                 font-size: 45px;
                 color: #ff4500;
             }
             p{
-                margin: 15px 0;
-                font-size: 26px;
+                font-size: 24px;
             }
         }
         .first{
-            margin-left: 20px;
+            margin-left: 30px;
         }
         .last{
             margin-right: 20px;
         }
     }
     .top-list{
-        margin: 30px 0;
+        padding-left: 20px;
         font-size: 32px;
     }
 }
